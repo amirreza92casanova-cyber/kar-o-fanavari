@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مستند دیجیتال مدال‌آوران ایران در بازی‌های المپیک تابستانی؛ پژوهش، آمار، فهرست ورزشکاران و مراحل مستندسازی.">
+  <meta name="theme-color" content="#100b20">
+  <title>OLYMPIC IRAN | قهرمانان ایران در المپیک</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar no-print">
+      <a class="brand" href="#home" aria-label="صفحهٔ اصلی Olympic Iran">
+        <span class="brand-mark">OI</span>
+        <span><b>OLYMPIC</b><small>IRAN / DIGITAL DOCUMENTARY</small></span>
+      </a>
+      <nav class="main-nav" aria-label="ناوبری اصلی">
+        <a href="#research">پژوهش</a>
+        <a href="#history">تاریخچه</a>
+        <a href="#medalists">مدال‌آورها</a>
+        <a href="#process">مراحل مستندسازی</a>
+        <a href="#sources">منابع</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="تغییر پوسته" title="تغییر پوسته">☼</button>
+        <button class="button button-small button-outline" id="printButton" type="button">چاپ گزارش</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-pad" id="home">
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> پروژهٔ مستندسازی · کار و فناوری پایهٔ هفتم</div>
+          <p class="hero-kicker">قهرمانان ایران در بزرگ‌ترین میدان ورزش جهان</p>
+          <h1>هر مدال، یک داستان؛<br><span>هر قهرمان، بخشی از تاریخ.</span></h1>
+          <p class="hero-description">روایتی داده‌محور از حضور ایران در بازی‌های المپیک تابستانی؛ از نخستین مدال در لندن ۱۹۴۸ تا افتخارآفرینی ورزشکاران در پاریس ۲۰۲۴.</p>
+          <div class="hero-actions no-print">
+            <a class="button button-primary" href="#medalists">دیدن مدال‌آورها <span>←</span></a>
+            <a class="button button-ghost" href="#research">شروع مطالعه</a>
+          </div>
+          <div class="hero-meta"><span>پوشش پژوهش: ۱۹۴۸–۲۰۲۴</span><i></i><span>۱۸ دورهٔ مدال‌آور</span><i></i><span>۶ رشتهٔ مدال‌آور</span></div>
+        </div>
+        <div class="hero-medal-wrap" aria-label="نماد مدال طلای المپیک">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="ribbon ribbon-left"></div><div class="ribbon ribbon-right"></div>
+          <div class="medal-hero"><div class="medal-inner"><span class="medal-star">✦</span><strong>IRAN</strong><small>OLYMPIC</small><span class="medal-year">۱۹۴۸ — ۲۰۲۴</span></div></div>
+          <div class="medal-caption"><b>۸۸</b><span>مدال در تاریخ المپیک تابستانی</span></div>
+        </div>
+        <div class="hero-bottom-line"><span>OLYMPIC IRAN</span><span>RESEARCH / PEOPLE / HISTORY</span></div>
+      </section>
+
+      <section class="stats-section section-pad" aria-label="آمار کلی مدال‌ها">
+        <div class="section-heading compact-heading">
+          <div><span class="section-index">۰۱ / آمار کلی</span><h2>افتخارها در یک نگاه</h2></div>
+          <p>آمار ثبت‌شدهٔ ایران در بازی‌های المپیک تابستانی تا پایان پاریس ۲۰۲۴</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card stat-total"><span class="stat-label">مجموع مدال‌ها</span><strong id="totalCount">۸۸</strong><span class="stat-sub">در ۱۸ دورهٔ مدال‌آور</span><span class="stat-symbol">✦</span></article>
+          <article class="stat-card gold-card"><span class="stat-label">مدال طلا</span><strong id="goldCount">۲۷</strong><span class="stat-sub">رتبهٔ نخست مسابقه</span><span class="medal-dot gold-dot">●</span></article>
+          <article class="stat-card silver-card"><span class="stat-label">مدال نقره</span><strong id="silverCount">۲۹</strong><span class="stat-sub">رتبهٔ دوم مسابقه</span><span class="medal-dot silver-dot">●</span></article>
+          <article class="stat-card bronze-card"><span class="stat-label">مدال برنز</span><strong id="bronzeCount">۳۲</strong><span class="stat-sub">رتبهٔ سوم مسابقه</span><span class="medal-dot bronze-dot">●</span></article>
+        </div>
+        <div class="medal-ratio-card">
+          <div class="ratio-head"><b>ترکیب مدال‌های ایران</b><span>مجموع: ۸۸ مدال</span></div>
+          <div class="ratio-track"><span class="ratio-gold" style="width:30.68%"></span><span class="ratio-silver" style="width:32.95%"></span><span class="ratio-bronze" style="width:36.37%"></span></div>
+          <div class="ratio-legend"><span><i class="gold-bg"></i> طلا <b>۲۷</b></span><span><i class="silver-bg"></i> نقره <b>۲۹</b></span><span><i class="bronze-bg"></i> برنز <b>۳۲</b></span></div>
+        </div>
+        <p class="data-note">دامنهٔ آمار این پژوهش فقط بازی‌های المپیک تابستانی بزرگسالان است؛ بازی‌های زمستانی، المپیک نوجوانان و پارالمپیک در این جمع محاسبه نشده‌اند.</p>
+      </section>
+
+      <section class="research-section section-pad" id="research">
+        <div class="section-heading">
+          <div><span class="section-index">۰۲ / شناخت موضوع</span><h2>المپیک چیست؟</h2></div>
+          <p>برای فهمیدن افتخارهای ایران، ابتدا باید خودِ بازی‌های المپیک را بشناسیم.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-main glass-card">
+            <span class="card-overline">THE OLYMPIC GAMES</span>
+            <h3>رقابت ورزشکاران جهان، زیر پرچم دوستی و تلاش</h3>
+            <p>بازی‌های المپیک یک رویداد ورزشی بین‌المللی است که ورزشکاران کشورهای گوناگون در رشته‌های مختلف با یکدیگر رقابت می‌کنند. شکل امروزی بازی‌های تابستانی در سال ۱۸۹۶ در آتن آغاز شد. این بازی‌ها معمولاً هر چهار سال یک‌بار برگزار می‌شوند.</p>
+            <p>ایران نخستین‌بار در سال ۱۹۰۰ با یک ورزشکار در شمشیربازی حضور داشت، اما نخستین حضور تیمی ایران در بازی‌های تابستانی به سال ۱۹۴۸ بازمی‌گردد. نخستین مدال ایران را جعفر سلماسی در همان سال به دست آورد.</p>
+            <div class="fact-strip"><div><strong>۱۸۹۶</strong><span>آغاز المپیک نوین</span></div><div><strong>۱۹۴۸</strong><span>نخستین حضور تیمی ایران</span></div><div><strong>۱۹۴۸</strong><span>نخستین مدال ایران</span></div></div>
+          </article>
+          <aside class="research-side">
+            <div class="side-fact"><span class="side-icon">🏛</span><div><b>خاستگاه تاریخی</b><p>بازی‌های باستانی در یونان برگزار می‌شدند و نام المپیک از منطقهٔ المپیا گرفته شده است.</p></div></div>
+            <div class="side-fact"><span class="side-icon">🌍</span><div><b>رویدادی جهانی</b><p>ورزشکاران کشورهای گوناگون در رشته‌های مختلف به رقابت می‌پردازند.</p></div></div>
+            <div class="side-fact"><span class="side-icon">🏅</span><div><b>سه نشان اصلی</b><p>به نفرات اول، دوم و سوم هر رقابت به‌ترتیب مدال طلا، نقره و برنز اهدا می‌شود.</p></div></div>
+          </aside>
+        </div>
+        <div class="question-block"><span>پرسش راهنمای کتاب</span><b>مدال‌آوران المپیک ورزشی کشور ایران چه کسانی هستند؟</b><p>در بخش‌های بعدی، با استفاده از داده‌های تاریخی و دسته‌بندی آن‌ها به این پرسش پاسخ می‌دهیم.</p></div>
+      </section>
+
+      <section class="history-section section-pad" id="history">
+        <div class="section-heading">
+          <div><span class="section-index">۰۳ / بررسی روند تاریخی</span><h2>مسیر مدال‌آوری ایران</h2></div>
+          <p>تعداد مدال‌ها در هر دورهٔ تابستانی؛ انتخاب هر دوره، جزئیات همان سال را نشان می‌دهد.</p>
+        </div>
+        <div class="history-layout">
+          <div class="history-chart-card glass-card">
+            <div class="chart-title-row"><div><b>مدال‌ها به تفکیک دوره</b><small>طلا، نقره و برنز</small></div><div class="chart-legend"><span><i class="gold-bg"></i> طلا</span><span><i class="silver-bg"></i> نقره</span><span><i class="bronze-bg"></i> برنز</span></div></div>
+            <div class="history-chart" id="historyChart" aria-label="نمودار تعداد مدال‌های ایران در دوره‌های المپیک"></div>
+            <div class="chart-axis"><span>دوره‌های قدیمی‌تر</span><span>دوره‌های جدیدتر</span></div>
+          </div>
+          <aside class="selected-game glass-card" id="selectedGame">
+            <span class="card-overline">SELECTED EDITION</span>
+            <h3>پاریس ۲۰۲۴</h3><p>آخرین دورهٔ کامل تابستانی در دامنهٔ این پژوهش</p>
+            <div class="selected-total"><strong>۱۲</strong><span>مدال</span></div>
+            <div class="selected-mini"><span>🥇 طلا <b>۳</b></span><span>🥈 نقره <b>۶</b></span><span>🥉 برنز <b>۳</b></span></div>
+            <button class="button button-primary button-full no-print" type="button" id="showParis">دیدن مدال‌آوران پاریس</button>
+          </aside>
+        </div>
+        <div class="history-insight"><span class="insight-mark">✦</span><p><b>نکتهٔ آماری:</b> بهترین نتیجهٔ ایران از نظر تعداد مدال در یک دورهٔ تابستانی، لندن ۲۰۱۲ با ۱۳ مدال ثبت‌شده است. پاریس ۲۰۲۴ با ۱۲ مدال، دومین نتیجهٔ پرمدال ایران در این مجموعه است.</p></div>
+      </section>
+
+      <section class="sports-section section-pad" id="sports">
+        <div class="section-heading">
+          <div><span class="section-index">۰۴ / رشته‌های ورزشی</span><h2>مدال‌ها از کدام رشته‌ها آمده‌اند؟</h2></div>
+          <p>دسته‌بندی ۸۸ مدال بر پایهٔ رشتهٔ ورزشی</p>
+        </div>
+        <div class="sports-grid" id="sportsGrid"></div>
+        <p class="data-note">کشتی در این جدول شامل کشتی آزاد و فرنگی است. اعداد بر اساس جدول مدال‌های تاریخی ایران تا پایان پاریس ۲۰۲۴ تنظیم شده‌اند.</p>
+      </section>
+
+      <section class="medalists-section section-pad" id="medalists">
+        <div class="section-heading">
+          <div><span class="section-index">۰۵ / فهرست قهرمانان</span><h2>مدال‌آوران ایران</h2></div>
+          <p>جست‌وجو و فیلتر ۸۸ مدال ثبت‌شده؛ هر ردیف نمایندهٔ یک مدال است.</p>
+        </div>
+        <div class="filter-panel no-print">
+          <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="جست‌وجوی نام ورزشکار یا رشته..." autocomplete="off"></label>
+          <label class="filter-select"><span>سال</span><select id="yearFilter"><option value="all">همهٔ دوره‌ها</option></select></label>
+          <label class="filter-select"><span>رشته</span><select id="sportFilter"><option value="all">همهٔ رشته‌ها</option></select></label>
+          <label class="filter-select"><span>مدال</span><select id="medalFilter"><option value="all">همهٔ مدال‌ها</option><option value="gold">طلا</option><option value="silver">نقره</option><option value="bronze">برنز</option></select></label>
+          <button class="button button-outline reset-button" type="button" id="resetFilters">پاک‌کردن فیلترها</button>
+        </div>
+        <div class="list-toolbar"><span id="resultsCount">در حال آماده‌سازی فهرست...</span><button class="text-button no-print" type="button" id="csvButton">خروجی CSV ↓</button></div>
+        <div class="table-wrap">
+          <table class="medal-table">
+            <thead><tr><th>ردیف</th><th>ورزشکار</th><th>مدال</th><th>دوره</th><th>رشته</th><th>ماده / وزن</th></tr></thead>
+            <tbody id="medalTableBody"><tr><td colspan="6">در حال بارگذاری...</td></tr></tbody>
+          </table>
+        </div>
+        <div class="table-footer"><span>اطلاعات تاریخی تا پاریس ۲۰۲۴</span><span id="tablePageNote">۸۸ رکورد مدال</span></div>
+      </section>
+
+      <section class="paris-section section-pad" id="paris2024">
+        <div class="paris-banner">
+          <div class="paris-copy"><span class="section-index">SPOTLIGHT / ۲۰۲۴</span><h2>پاریس؛ ۱۲ مدال برای ایران</h2><p>کاروان ایران در سی‌وسومین دورهٔ بازی‌های المپیک تابستانی با ۳ طلا، ۶ نقره و ۳ برنز به کار خود پایان داد. مدال‌ها در دو رشتهٔ کشتی و تکواندو به دست آمدند.</p><div class="paris-tags"><span>کشتی · ۸ مدال</span><span>تکواندو · ۴ مدال</span></div><button class="button button-primary no-print" id="parisFilterButton" type="button">نمایش ۱۲ مدال پاریس</button></div>
+          <div class="paris-count"><strong>۱۲</strong><span>MEDALS</span><div class="paris-medals"><i class="gold-bg"></i><i class="gold-bg"></i><i class="gold-bg"></i><i class="silver-bg"></i><i class="silver-bg"></i><i class="silver-bg"></i><i class="silver-bg"></i><i class="silver-bg"></i><i class="silver-bg"></i><i class="bronze-bg"></i><i class="bronze-bg"></i><i class="bronze-bg"></i></div></div>
+        </div>
+      </section>
+
+      <section class="process-section section-pad" id="process">
+        <div class="section-heading">
+          <div><span class="section-index">۰۶ / فرایند مستندسازی</span><h2>پشت صحنهٔ ساخت این مستند</h2></div>
+          <p>این بخش دفتر کار پروژه است؛ وضعیت و یادداشت هر مرحله را خودت به‌روز کن. اطلاعات در مرورگر همین دستگاه ذخیره می‌شود.</p>
+        </div>
+        <div class="process-intro"><div><b>دفتر ثبت فعالیت‌ها</b><span>وضعیت‌ها را پس از انجام واقعی هر کار تغییر بده.</span></div><div class="progress-number"><strong id="progressPercent">۰٪</strong><span>پیشرفت ثبت‌شده</span></div></div>
+        <div class="progress-track"><span id="progressBar"></span></div>
+        <div class="steps-grid" id="stepsGrid">
+          <article class="step-card"><span class="step-number">۰۱</span><h3>انتخاب موضوع</h3><p>تعیین موضوع تحقیق و پرسش اصلی.</p></article>
+          <article class="step-card"><span class="step-number">۰۲</span><h3>جمع‌آوری اطلاعات</h3><p>مطالعهٔ منابع و گردآوری داده‌های مدال‌ها.</p></article>
+          <article class="step-card"><span class="step-number">۰۳</span><h3>دسته‌بندی داده‌ها</h3><p>مرتب‌سازی بر اساس سال، رشته و نوع مدال.</p></article>
+          <article class="step-card"><span class="step-number">۰۴</span><h3>طراحی مستند</h3><p>ساخت ساختار صفحات و اجزای رابط کاربری.</p></article>
+          <article class="step-card"><span class="step-number">۰۵</span><h3>برنامه‌نویسی</h3><p>پیاده‌سازی جست‌وجو، فیلتر و نمودارها.</p></article>
+          <article class="step-card"><span class="step-number">۰۶</span><h3>آزمایش و اصلاح</h3><p>بررسی داده‌ها، آزمودن امکانات و رفع خطا.</p></article>
+          <article class="step-card"><span class="step-number">۰۷</span><h3>ارائهٔ نهایی</h3><p>تهیهٔ نسخهٔ چاپی و معرفی نتیجهٔ پژوهش.</p></article>
+        </div>
+        <div class="notes-panel glass-card">
+          <div class="notes-heading"><div><span class="card-overline">MY RESEARCH LOG</span><h3>یادداشت پژوهشگر</h3></div><span class="save-indicator" id="saveIndicator">ذخیرهٔ خودکار فعال است</span></div>
+          <div class="student-fields">
+            <label>نام و نام خانوادگی<input id="studentName" type="text" placeholder="نام پژوهشگر"></label>
+            <label>کلاس<input id="studentClass" type="text" placeholder="مثلاً ۷/۲"></label>
+            <label>نام دبیر<input id="teacherName" type="text" placeholder="نام دبیر کار و فناوری"></label>
+          </div>
+          <label class="notes-label" for="generalNotes">یادداشت کلی، نتیجهٔ بررسی منابع یا نکاتی که هنگام انجام پروژه متوجه شدی</label>
+          <textarea id="generalNotes" rows="4" placeholder="اینجا مشاهدات و توضیحات خودت را بنویس..."></textarea>
+          <div class="notes-actions no-print"><button class="button button-outline" id="exportProgress" type="button">دریافت نسخهٔ پشتیبان یادداشت‌ها</button><button class="text-button danger-text" id="clearProgress" type="button">پاک‌کردن یادداشت‌های ذخیره‌شده</button></div>
+        </div>
+      </section>
+
+      <section class="quiz-section section-pad" id="quiz">
+        <div class="section-heading">
+          <div><span class="section-index">۰۷ / سنجش آموخته‌ها</span><h2>آزمون کوتاه المپیک</h2></div>
+          <p>۵ سؤال دربارهٔ اطلاعاتی که در مستند خواندی؛ پاسخ‌ها را انتخاب و نتیجه را بررسی کن.</p>
+        </div>
+        <div class="quiz-card glass-card">
+          <div class="quiz-top"><span>KNOWLEDGE CHECK</span><span id="quizProgress">۵ پرسش</span></div>
+          <form id="quizForm">
+            <fieldset class="question"><legend>۱. نخستین حضور تیمی ایران در بازی‌های المپیک تابستانی چه سالی بود؟</legend><label><input type="radio" name="q1" value="1900"><span>۱۹۰۰</span></label><label><input type="radio" name="q1" value="1948"><span>۱۹۴۸</span></label><label><input type="radio" name="q1" value="1952"><span>۱۹۵۲</span></label></fieldset>
+            <fieldset class="question"><legend>۲. نخستین مدال المپیکی ایران را چه کسی به دست آورد؟</legend><label><input type="radio" name="q2" value="salmasi"><span>جعفر سلماسی</span></label><label><input type="radio" name="q2" value="takhti"><span>غلامرضا تختی</span></label><label><input type="radio" name="q2" value="habibi"><span>امامعلی حبیبی</span></label></fieldset>
+            <fieldset class="question"><legend>۳. کدام رشته بیشترین مدال المپیکی ایران را داشته است؟</legend><label><input type="radio" name="q3" value="taekwondo"><span>تکواندو</span></label><label><input type="radio" name="q3" value="weightlifting"><span>وزنه‌برداری</span></label><label><input type="radio" name="q3" value="wrestling"><span>کشتی</span></label></fieldset>
+            <fieldset class="question"><legend>۴. ایران در پاریس ۲۰۲۴ چند مدال طلا گرفت؟</legend><label><input type="radio" name="q4" value="2"><span>۲</span></label><label><input type="radio" name="q4" value="3"><span>۳</span></label><label><input type="radio" name="q4" value="6"><span>۶</span></label></fieldset>
+            <fieldset class="question"><legend>۵. کدام مورد جزو دامنهٔ این پژوهش نیست؟</legend><label><input type="radio" name="q5" value="summer"><span>المپیک تابستانی</span></label><label><input type="radio" name="q5" value="winter"><span>المپیک زمستانی</span></label><label><input type="radio" name="q5" value="paralympic"><span>پارالمپیک</span></label></fieldset>
+            <div class="quiz-actions no-print"><button class="button button-primary" type="submit">بررسی پاسخ‌ها</button><button class="button button-ghost" type="reset" id="quizReset">شروع دوباره</button></div>
+          </form>
+          <div class="quiz-result" id="quizResult" aria-live="polite" hidden></div>
+        </div>
+      </section>
+
+      <section class="sources-section section-pad" id="sources">
+        <div class="section-heading">
+          <div><span class="section-index">۰۸ / منابع پژوهش</span><h2>منابع و روش گردآوری</h2></div>
+          <p>منابع را ثبت می‌کنیم تا خواننده بتواند مسیر بررسی اطلاعات را دنبال کند.</p>
+        </div>
+        <div class="method-card"><b>روش کار</b><p>اطلاعات مدال‌ها از جدول تاریخی نتایج ایران استخراج و با صفحات نتایج دوره‌های المپیک تطبیق داده شده‌اند. برای مدال‌های پاریس ۲۰۲۴، نتایج رشتهٔ تکواندو با پایگاه نتایج فدراسیون جهانی تکواندو نیز بررسی شده است. در برخی رقابت‌های قدیمی‌تر، رتبهٔ مدال ممکن است پس از بازبینی رسمی نتایج تغییر کرده باشد؛ در فهرست حاضر وضعیت نهاییِ گزارش‌شده ملاک است.</p></div>
+        <div class="sources-grid">
+          <a class="source-card" href="https://www.olympedia.org/countries/IRI" target="_blank" rel="noopener noreferrer"><span class="source-number">۰۱</span><div><b>Olympedia — ایران در بازی‌های المپیک</b><p>مرجع تخصصی تاریخ و نتایج شرکت‌کنندگان و مدال‌ها به تفکیک دوره.</p><small>olympedia.org</small></div><span class="source-arrow">↗</span></a>
+          <a class="source-card" href="https://www.olympedia.org/countries/IRI/editions/63" target="_blank" rel="noopener noreferrer"><span class="source-number">۰۲</span><div><b>Olympedia — ایران در پاریس ۲۰۲۴</b><p>نتایج ورزشکاران ایران در رشته‌های مختلف المپیک پاریس.</p><small>olympedia.org</small></div><span class="source-arrow">↗</span></a>
+          <a class="source-card" href="https://results.worldtaekwondo.org/statistics/countries/IRI/og/2024-paris-olympic-games" target="_blank" rel="noopener noreferrer"><span class="source-number">۰۳</span><div><b>World Taekwondo — نتایج ایران در پاریس</b><p>آمار و نام چهار مدال‌آور ایران در رقابت‌های تکواندو.</p><small>worldtaekwondo.org</small></div><span class="source-arrow">↗</span></a>
+          <a class="source-card" href="https://en.wikipedia.org/wiki/Iran_at_the_Olympics" target="_blank" rel="noopener noreferrer"><span class="source-number">۰۴</span><div><b>Iran at the Olympics — جدول مدال‌ها</b><p>نمای کلی مدال‌های ایران بر پایهٔ دوره، رشته و فهرست ورزشکاران؛ برای تطبیق با منابع تخصصی استفاده شده است.</p><small>wikipedia.org</small></div><span class="source-arrow">↗</span></a>
+        </div>
+        <div class="scope-note"><span>!</span><p><b>محدوده و تاریخ داده‌ها:</b> این نسخه دربارهٔ مدال‌های بازی‌های المپیک تابستانی بزرگسالان از ۱۹۴۸ تا پایان پاریس ۲۰۲۴ است. حضور ایران در بازی‌های زمستانی تا ۲۰۲۶ نیز در جدول بررسی شد و مدالی برای ایران ثبت نشده است. المپیک نوجوانان و پارالمپیک موضوع این گزارش نیستند.</p></div>
+      </section>
+
+      <section class="closing-section section-pad">
+        <div class="closing-card"><span class="closing-star">✦</span><p>پایان گزارش، آغاز شناخت بیشتر</p><h2>هر عدد، پشتوانه‌ای از تلاش دارد.</h2><span class="closing-sub">مستند دیجیتال مدال‌آوران ایران در المپیک · کار و فناوری هفتم</span><div class="closing-actions no-print"><button class="button button-primary" type="button" id="finalPrint">چاپ / ذخیرهٔ PDF</button><a class="button button-outline" href="#home">بازگشت به ابتدای مستند ↑</a></div></div>
+      </section>
+    </main>
+
+    <footer class="footer"><span>OLYMPIC IRAN · DIGITAL DOCUMENTARY</span><span>پژوهش، دسته‌بندی داده و برنامه‌نویسی</span><span>نسخهٔ آموزشی · ۱۴۰۵</span></footer>
+  </div>
+
+  <div class="print-cover print-only">
+    <p>گزارش مستندسازی · پودمان چهارم کار و فناوری پایهٔ هفتم</p>
+    <h1>مدال‌آوران ورزش ایران در بازی‌های المپیک</h1>
+    <p>از نخستین مدال در ۱۹۴۸ تا پایان المپیک پاریس ۲۰۲۴</p>
+    <div class="print-student"><p>نام و نام خانوادگی: <span id="printStudentName">................................</span></p><p>کلاس: <span id="printStudentClass">................</span></p><p>نام دبیر: <span id="printTeacherName">........................</span></p></div>
+    <div class="print-summary"><b>۲۷ طلا</b><b>۲۹ نقره</b><b>۳۲ برنز</b><b>۸۸ مدال</b></div>
+  </div>
+  <div class="print-only print-report-note"><h2>خلاصهٔ پژوهش</h2><p>این گزارش به بررسی مدال‌های ایران در بازی‌های المپیک تابستانی از ۱۹۴۸ تا پاریس ۲۰۲۴ می‌پردازد. داده‌ها بر اساس سال برگزاری، رشتهٔ ورزشی، نام ورزشکار و نوع مدال دسته‌بندی شده‌اند. مجموع مدال‌های ثبت‌شده ۸۸ عدد شامل ۲۷ طلا، ۲۹ نقره و ۳۲ برنز است.</p><h2>فهرست کامل مدال‌آوران</h2></div>
+</body>
+</html>
